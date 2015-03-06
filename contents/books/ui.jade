@@ -1,0 +1,21 @@
+h5 Search
+.row
+    .col-md-5
+        .form-group.form-group-default
+            label Book Title          
+            input#p.form-control(type='text', required='')
+
+    .col-md-1                         
+        button.btn.btn-primary(onClick='books.searchByName($("#p").val())') Search
+
+    .col-md-3  
+        .form-group.form-group-default
+            h5 Examples of searches:
+            ul
+                li
+                    a(href="#" onClick='books.searchByName("one-more-thing")') One More Thing
+                li    
+                    a(href="#" onClick='books.searchByName("dragon")') Dragon
+                li    
+                    a(href="#" onClick='books.searchByName("harry-potter")') Harry Potter   
+        
